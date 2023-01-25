@@ -14,7 +14,7 @@ TRANSACTION_TYPE = {
 }
 
 
-class Transactions(models.Model):
+class Transaction(models.Model):
     type = models.IntegerField(choices=TRANSACTION_TYPE.items())
     date = models.IntegerField(max_length=8)
     value = models.IntegerField(max_length=10)
