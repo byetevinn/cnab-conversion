@@ -50,7 +50,6 @@ DJANGO_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "drf_spectacular",
 ]
 
 INSTALLED_APPS = MY_APPS + THIRD_PARTY_APPS + DJANGO_APPS
