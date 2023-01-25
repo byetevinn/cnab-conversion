@@ -18,7 +18,7 @@ class Transaction(models.Model):
     type = models.IntegerField(choices=TRANSACTION_TYPE.items())
     date = models.IntegerField()
     value = models.DecimalField(max_digits=10, decimal_places=2)
-    cpf = models.IntegerField()
+    cpf = models.CharField(max_length=11)
     card = models.CharField(max_length=12)
     hour = models.IntegerField()
     store_owner = models.CharField(max_length=14)
