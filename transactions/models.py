@@ -15,11 +15,11 @@ TRANSACTION_TYPE = {
 
 
 class Transaction(models.Model):
-    type = models.IntegerField(choices=TRANSACTION_TYPE.items())
-    date = models.IntegerField()
-    value = models.DecimalField(max_digits=10, decimal_places=2)
+    type = models.CharField(choices=TRANSACTION_TYPE.items(), max_length=22)
+    date = models.CharField(max_length=8)
+    value = models.CharField(max_length=10)
     cpf = models.CharField(max_length=11)
     card = models.CharField(max_length=12)
-    hour = models.IntegerField()
+    hour = models.CharField(max_length=6)
     store_owner = models.CharField(max_length=14)
     store_name = models.CharField(max_length=19)
