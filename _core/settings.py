@@ -31,7 +31,7 @@ SECRET_KEY = "django-insecure-n(2+)ue&(2ugmq-r_gm-z-%#plsfcz@)^sadl77fy*w=v-9rhy
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["cnab-conversion-production.up.railway.app/", "0.0.0.0"]
 
 
 # Application definition
