@@ -102,12 +102,12 @@ DATABASES = {
     }
 }
 
-DATABASES_URL = os.getenv("DATABASES_URL")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-if DATABASES_URL:
+if DATABASE_URL:
 
     db_deploy = dj_database_url.config(
-        default=DATABASES_URL, conn_max_age=500, ssl_require=True
+        default=DATABASE_URL, conn_max_age=500, ssl_require=True
     )
 
     DATABASES["default"].update(db_deploy)
