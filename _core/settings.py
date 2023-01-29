@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure-n(2+)ue&(2ugmq-r_gm-z-%#plsfcz@)^sadl77fy*w=v-9rhy"
+SECRET_KEY = os.getenv("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
@@ -106,7 +106,9 @@ DATABASES_URL = os.getenv("DATABASES_URL")
 
 if DATABASES_URL:
 
-    db_deploy = dj_database_url.config(default=DATABASES_URL)
+    db_deploy = dj_database_url.config(
+        default=DATABASES_URL, conn_max_age=500, ssl_require=True
+    )
 
     DATABASES["default"].update(db_deploy)
 
@@ -150,7 +152,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 
 if not DEBUG:
     STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
