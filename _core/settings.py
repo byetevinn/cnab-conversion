@@ -38,12 +38,12 @@ ALLOWED_HOSTS = ["cnab-conversion-production.up.railway.app", "0.0.0.0"]
 
 MY_APPS = [
     "transactions",
-    "corsheaders",
 ]
 
 THIRD_PARTY_APPS = [
     "rest_framework",
     "drf_spectacular",
+    "corsheaders",
 ]
 
 DJANGO_APPS = [
