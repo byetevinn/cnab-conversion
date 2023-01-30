@@ -38,6 +38,7 @@ ALLOWED_HOSTS = ["cnab-conversion-production.up.railway.app", "0.0.0.0"]
 
 MY_APPS = [
     "transactions",
+    "corsheaders",
 ]
 
 THIRD_PARTY_APPS = [
@@ -59,6 +60,8 @@ INSTALLED_APPS = MY_APPS + THIRD_PARTY_APPS + DJANGO_APPS
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -163,3 +166,12 @@ if not DEBUG:
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CORS_ALLOW_ALL_ORIGINS: True
+
+CORS_ALLOW_HEADERS = [
+    "accept",
+    "accept-encoding",
+    "authorization",
+    "content-type",
+]
