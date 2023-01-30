@@ -1,5 +1,5 @@
 ## Sobre o projeto
-Uma API-rest desenvolvida com a finalidade de armazenar dados de arquivos CNAB, esses arquivos são tratados no front-end e inseridos em um banco de dados com essa API.
+Uma API-rest desenvolvida com a finalidade de armazenar dados de arquivos CNAB. Esses arquivos são tratados no <a href="https://github.com/byetevinn/cnab-conversion-front">Front-End</a> e inseridos em um banco de dados com essa API.
 
 ## Como instalar e rodar a aplicação
 
