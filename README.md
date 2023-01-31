@@ -7,11 +7,15 @@ Uma API-rest desenvolvida com a finalidade de armazenar dados de arquivos CNAB. 
 
 2- Crie um ambiente virtual usando o comando `python -m venv venv`
 
-3- Instale todas as dependências necessárias usando o comando `pip install -r requirements.txt`
+3- Inicie o ambiente virtual com o comando `source venv/bin/activate`
 
-4- Crie as suas variáveis de ambiente usando o exemplo do `.env-example`
+4- Instale todas as dependências necessárias usando o comando `pip install -r requirements.txt`
 
-5- Por fim use o comando `python manage.py runserver` para rodar a aplicação
+5- Crie as suas variáveis de ambiente usando o exemplo do `.env-example`
+
+6- Para criar as tabelas no banco de dados use os comandos `python manage.py makemigrations` e `python manage.py migrate`
+
+7- Por fim use o comando `python manage.py runserver` para rodar a aplicação
 
 ## Deploy
 
