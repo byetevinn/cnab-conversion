@@ -13,7 +13,7 @@ Uma API-rest desenvolvida com a finalidade de armazenar dados de arquivos CNAB. 
 
 5- Crie as suas variáveis de ambiente usando o exemplo do `.env-example`
 
-6- Para criar as tabelas no banco de dados use os comandos `python manage.py makemigrations` e `python manage.py migrate`
+6- Para criar as tabelas no banco de dados use o comando `python manage.py migrate`
 
 7- Por fim use o comando `python manage.py runserver` para rodar a aplicação
 
