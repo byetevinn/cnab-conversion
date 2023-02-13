@@ -3,28 +3,26 @@ Uma API-rest desenvolvida com a finalidade de armazenar dados de arquivos CNAB. 
 
 ## Como instalar e rodar a aplicação
 
-1- Clone o repositório em sua máquina
+1- Crie seu database no postgreSQL
 
-2- Crie um ambiente virtual usando o comando `python -m venv venv`
+2- Clone o repositório em sua máquina
 
-3- Inicie o ambiente virtual com o comando `source venv/bin/activate`
+3- Crie um ambiente virtual usando o comando `python -m venv venv`
 
-4- Instale todas as dependências necessárias usando o comando `pip install -r requirements.txt`
+4- Inicie o ambiente virtual com o comando `source venv/bin/activate`
 
-5- Crie as suas variáveis de ambiente usando o exemplo do `.env-example`
+5- Instale todas as dependências necessárias usando o comando `pip install -r requirements.txt`
 
-6- Para criar as tabelas no banco de dados use o comando `python manage.py migrate`
+6- Crie as suas variáveis de ambiente usando o exemplo do `.env-example`
 
-7- Por fim use o comando `python manage.py runserver` para rodar a aplicação
+7- Para criar as tabelas no banco de dados use o comando `python manage.py migrate`
 
-## Deploy
-
-- <a href="https://cnab-conversion-production.up.railway.app/">Deploy</a>
+8- Por fim use o comando `python manage.py runserver` para rodar a aplicação
 
 ## Documentação
 
-- <a href="https://cnab-conversion-production.up.railway.app/docs/swagger/">Swagger</a>
-- <a href="https://cnab-conversion-production.up.railway.app/docs/redoc/">Redoc</a>
+- Swagger: Acrescente `/docs/swagger/` na sua URL
+- Redoc: Acrescente `/docs/redoc/` na sua URL
 
 ## Tecnologias usadas no projeto
 
